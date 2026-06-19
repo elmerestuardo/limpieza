@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Plan de Limpieza - Isla Chicales</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 50%, #80deea 100%);
+            color: #004d40;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .poster {
+            background-color: rgba(255, 255, 255, 0.95);
+            width: 100%;
+            max-width: 800px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            padding: 40px;
+            border: 4px solid #00838f;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Detalles de playa en las esquinas */
+        .poster::before {
+            content: '🌴';
+            font-size: 40px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .poster::after {
+            content: '🌊';
+            font-size: 40px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 3px dashed #00838f;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #006064;
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #00838f;
+            font-weight: bold;
+            margin: 0;
+        }
+        .instruction {
+            background-color: #e0f2f1;
+            border-left: 5px solid #00b0ff;
+            padding: 12px;
+            border-radius: 4px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .area-card {
+            background: #ffffff;
+            border: 2px solid #b2dfdb;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .area-card:hover {
+            transform: translateY(-3px);
+            border-color: #4db6ac;
+        }
+        .full-width {
+            grid-column: span 2;
+            background: #f0fdfa;
+            border: 2px solid #4db6ac;
+        }
+        .area-title {
+            font-size: 1.2rem;
+            color: #00796b;
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #e0f2f1;
+            padding-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .encargado {
+            font-weight: bold;
+            color: #004d40;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            background: #e0f2f1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .sub-team-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: #00838f;
+            font-weight: bold;
+            margin: 8px 0 4px 0;
+            letter-spacing: 0.5px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+        }
+        .full-width ul {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        li {
+            font-size: 0.9rem;
+            color: #37474f;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        li::before {
+            content: '•';
+            color: #26a69a;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 35px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #006064;
+            border-top: 2px solid #b2dfdb;
+            padding-top: 15px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+<div class="poster">
+    <header>
+        <h1>Plan de Limpieza y Orden</h1>
+        <p class="subtitle">Actividad de Jóvenes — Isla Chicales 🏖️🏊‍♂️</p>
+    </header>
+
+    <div class="instruction">
+        🧹 <strong>Misión de todos:</strong> Recoger toda la basura en bolsas, barrer las áreas asignadas y dejar las áreas limpias. ¡Trabajemos con deleite!
+    </div>
+
+    <div class="grid-container">
+        
+        <!-- COCINA -->
+        <div class="area-card">
+            <h3 class="area-title">🍳 Cocina</h3>
+            <span class="encargado">👑 Encargada: Cesia de Recinos</span>
+            <div class="sub-team-title">🙋‍♀️ Equipo:</div>
+            <ul>
+                <li>Amy Barrios</li>
+                <li>Kayleen Vásquez</li>
+                <li>Adriana Hernández</li>
+                <li>Alison Alfaro</li>
+                <li>Génesis Herrera</li>
+            </ul>
+        </div>
+
+        <!-- BAÑOS -->
+        <div class="area-card">
+            <h3 class="area-title">🧼 Baños</h3>
+            <span class="encargado">👑 Encargados: Elmer B. y Gaddy R.</span>
+            
+            <div class="sub-team-title">🙋‍♀️ Baño Mujeres:</div>
+            <ul style="grid-template-columns: 1fr;">
+                <li>Angelie González</li>
+                <li>Zoeth López</li>
+                <li>Katerin Carrillo</li>
+            </ul>
+            
+            <div class="sub-team-title">🙋‍♂️ Baño Hombres:</div>
+            <ul style="grid-template-columns: 1fr;">
+                <li>Estiven Coronado</li>
+                <li>Gamaliel López</li>
+                <li>Arody Retana</li>
+            </ul>
+        </div>
+
+        <!-- PASTORES -->
+        <div class="area-card">
+            <h3 class="area-title">🏡 Área de Pastores</h3>
+            <span class="encargado">👑 Encargada: Alejandra Palma</span>
+            <div class="sub-team-title">🙋‍♀️ Equipo:</div>
+            <ul>
+                <li>Mishell Miranda</li>
+                <li>Angie Tiquiram</li>
+                <li>Nicold Ariza</li>
+                <li>Sofia Ordoñez</li>
+            </ul>
+        </div>
+
+        <!-- DECORACIÓN -->
+        <div class="area-card">
+            <h3 class="area-title">✨ Decoración (Desmontaje)</h3>
+            <span class="encargado">👑 Encargada: Orfa Valiente</span>
+            <div class="sub-team-title">🙋‍♀️ Equipo:</div>
+            <ul>
+                <li>Jaqueline Ariza</li>
+                <li>Karen Ordoñez</li>
+                <li>Alexandra López</li>
+                <li>María José Navas</li>
+                <li>Andrea López</li>
+            </ul>
+        </div>
+
+        <!-- USO COMÚN -->
+        <div class="area-card full-width">
+            <h3 class="area-title">🤽‍♂️ Espacios de Uso Común (Piscina, Rancho, Áreas Verdes, 2do Nivel)</h3>
+            <span class="encargado">👑 Encargada: Sucely Ruano</span>
+            <div class="sub-team-title">👫 Equipo:</div>
+            <ul>
+                <li>Kenneth Estrada</li>
+                <li>Ronal Berganza</li>
+                <li>Juan Castillo</li>
+                <li>Víctor Herrera</li>
+                <li>Kevin Lanuza</li>
+                <li>Dennis Pineda</li>
+                <li>Jimmy Pineda</li>
+                <li>Alex Castellanos</li>
+                <li>Carlitos Ruano</li>
+                <li>Samuel Ardón</li>
+                <li>Franklin Arias</li>
+                <li>Peyton Sanan</li>
+                <li>Ángel Tiquiram</li>
+                <li>Gabriel Castañeda</li>
+                <li>Miguel Castañeda</li>
+                <li>Juan Daniel Orellana</li>
+                <li>Simoney Recinos</li>
+                <li>Javier Ordoñez</li>
+                <li>Alberto Alvarado</li>
+                <li>Edgar Miranda</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>«Hagan todo con amor y para la gloria de Dios» • La limpieza se realizará al finalizar la actividad, trabajando con rapidez para regresar luego a casa.</p>
+    </footer>
+</div>
+
+</body>
+</html>
