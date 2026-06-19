@@ -151,10 +151,49 @@
             padding-top: 15px;
             font-weight: 500;
         }
+        /* Estilo del botón en la pantalla */
+.btn-descargar {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    display: block;
+    width: fit-content;
+    transition: background 0.2s;
+}
+
+.btn-descargar:hover {
+    background-color: #004d40;
+}
+
+/* Ocultar el botón automáticamente al momento de imprimir/guardar PDF */
+@media print {
+    .btn-descargar {
+        display: none !important;
+    }
+    body {
+        background: none !important; /* Quita el fondo de pantalla para ahorrar tinta */
+        padding: 0;
+    }
+    .poster {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+}
+
     </style>
 </head>
 <body>
-
+<button onclick="imprimirPantalla()" class="btn-descargar">
+    📥 Descargar / Imprimir Plan
+</button>
 <div class="poster">
     <header>
         <h1>Plan de Limpieza y Orden</h1>
@@ -263,6 +302,10 @@
         <p>«Hagan todo con amor y para la gloria de Dios» • La limpieza se realizará al finalizar la actividad, trabajando con rapidez para regresar luego a casa.</p>
     </footer>
 </div>
-
+<script>
+function imprimirPantalla() {
+    window.print();
+}
+</script>
 </body>
 </html>
